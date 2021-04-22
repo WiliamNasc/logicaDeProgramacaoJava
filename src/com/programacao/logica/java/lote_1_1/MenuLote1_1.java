@@ -71,12 +71,15 @@ public class MenuLote1_1 implements MenuLote {
                         adicionarConteudoPorQtde("tr", 1,
                                 adicionarConteudoPorQtde("th", 5, "")
                         ),
-                        adicionarConteudoPorQtde("tr", 2,
+                        adicionarConteudoPorQtde("tr", 3,
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 0,5)
                                 ),
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 5, 10)
+                                ),
+                                adicionarConteudoPorQtde("td", 1,
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 10, 11)
                                 )
                         )
                     )
@@ -94,7 +97,8 @@ public class MenuLote1_1 implements MenuLote {
             "7 - Volume paralelepípedo",
             "8 - Rendimento poupança",
             "9 - Soma dos quadrados",
-            "10 - Diferença entre dois números reais"
+            "10 - Diferença entre dois números reais",
+            "11 - Comprimento da circunferência"
     };
 
     private Exercicio listaInstanciaExercicios[] = {
@@ -107,6 +111,7 @@ public class MenuLote1_1 implements MenuLote {
             new Exercicio7(),
             new Exercicio8(),
             new Exercicio9(),
-            new Exercicio10()
+            new Exercicio10(),
+            new Exercicio11()
     };
 }

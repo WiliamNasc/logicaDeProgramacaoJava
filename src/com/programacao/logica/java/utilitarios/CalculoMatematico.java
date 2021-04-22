@@ -16,4 +16,8 @@ public class CalculoMatematico {
     public static double equacao2grauCalcularX2(double b, double delta, double a){
         return (-(b) - Math.sqrt(delta)) / (2 * a);
     }
+
+    public static double calcularComprimentoCircuferencia(double raio) {
+        return 2 * 3.14 * raio;
+    }
 }
