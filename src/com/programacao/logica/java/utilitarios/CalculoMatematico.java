@@ -24,4 +24,13 @@ public class CalculoMatematico {
     public static double converterGramaParaKg(double grama) {
         return grama / 1000;
     }
+
+    public static double calcular3anguloDeUmTriangulo(double angulo1, double angulo2) {
+        final double totalAngulo = 180;
+        double angulo3 = 0;
+
+        angulo3 = totalAngulo - (angulo1 + angulo2);
+
+        return angulo3;
+    }
 }
