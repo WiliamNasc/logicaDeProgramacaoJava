@@ -20,4 +20,8 @@ public class CalculoMatematico {
     public static double calcularComprimentoCircuferencia(double raio) {
         return 2 * 3.14 * raio;
     }
+
+    public static double converterGramaParaKg(double grama) {
+        return grama / 1000;
+    }
 }
