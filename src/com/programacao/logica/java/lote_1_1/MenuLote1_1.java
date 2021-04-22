@@ -78,8 +78,8 @@ public class MenuLote1_1 implements MenuLote {
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 5, 10)
                                 ),
-                                adicionarConteudoPorQtde("td", 4,
-                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 10, 14)
+                                adicionarConteudoPorQtde("td", 5,
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 10, 15)
                                 )
                         )
                     )
@@ -101,7 +101,8 @@ public class MenuLote1_1 implements MenuLote {
             "11 - Comprimento da circunferência",
             "12 - Idade atual, e daqui à 17 anos",
             "13 - Quantidade de dias, de duração de alimentos",
-            "14 - Terceiro ângulo, de um triângulo"
+            "14 - Terceiro ângulo, de um triângulo",
+            "15 - Hipotenusa de um triângulo retângulo"
     };
 
     private Exercicio listaInstanciaExercicios[] = {
@@ -118,6 +119,7 @@ public class MenuLote1_1 implements MenuLote {
             new Exercicio11(),
             new Exercicio12(),
             new Exercicio13(),
-            new Exercicio14()
+            new Exercicio14(),
+            new Exercicio15()
     };
 }

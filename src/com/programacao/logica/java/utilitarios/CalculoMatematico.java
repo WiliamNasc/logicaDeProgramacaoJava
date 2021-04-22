@@ -33,4 +33,16 @@ public class CalculoMatematico {
 
         return angulo3;
     }
+
+    public static double calcularHipotenusa(double a, double b) {
+        double hipotenusa = 0;
+
+        a = Math.pow(a, 2);
+        b = Math.pow(b, 2);
+
+        hipotenusa = a + b;
+        hipotenusa = Math.sqrt(hipotenusa);
+
+        return hipotenusa;
+    }
 }

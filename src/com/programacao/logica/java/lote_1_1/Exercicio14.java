@@ -1,9 +1,6 @@
 package com.programacao.logica.java.lote_1_1;
 
-import com.programacao.logica.java.utilitarios.CaixaDeDialogoPersonalizada;
-import com.programacao.logica.java.utilitarios.CalculoMatematico;
-import com.programacao.logica.java.utilitarios.Exercicio;
-import com.programacao.logica.java.utilitarios.MensagemPersonalizada;
+import com.programacao.logica.java.utilitarios.*;
 
 public class Exercicio14 implements Exercicio {
     @Override
@@ -29,7 +26,12 @@ public class Exercicio14 implements Exercicio {
     public void visualizarResposta() {
         MensagemPersonalizada.mensagemInformacao(
                 "O terceiro ângulo é: "
-                + CalculoMatematico.calcular3anguloDeUmTriangulo(this.angulo1, this.angulo2),
+                .concat(FormataTexto
+                        .valorComCasasDecimais("2",CalculoMatematico
+                                                               .calcular3anguloDeUmTriangulo(
+                                                                       this.angulo1, this.angulo2)
+                        )
+                ),
                 "Exercício 14"
         );
     }
