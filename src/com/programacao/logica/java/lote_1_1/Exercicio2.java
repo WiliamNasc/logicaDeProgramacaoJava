@@ -4,13 +4,6 @@ import com.programacao.logica.java.utilitarios.*;
 
 public class Exercicio2 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba o salário de um funcionário,\n"

@@ -1,7 +1,11 @@
 package com.programacao.logica.java.utilitarios;
 
 public interface Exercicio {
-    void executarExercicio();
+    default void executarExercicio(){
+        visualizarEnunciado();
+        solicitarDadosUsuario();
+        visualizarResposta();
+    };
     void visualizarEnunciado();
     void visualizarResposta();
     void solicitarDadosUsuario();

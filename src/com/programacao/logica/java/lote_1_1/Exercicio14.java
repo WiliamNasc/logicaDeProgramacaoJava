@@ -4,13 +4,6 @@ import com.programacao.logica.java.utilitarios.*;
 
 public class Exercicio14 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba 2 ângulos de um triângulo."

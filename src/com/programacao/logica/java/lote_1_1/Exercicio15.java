@@ -4,13 +4,6 @@ import com.programacao.logica.java.utilitarios.*;
 
 public class Exercicio15 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba os valores de 2 catetos de um triângulo retângulo."

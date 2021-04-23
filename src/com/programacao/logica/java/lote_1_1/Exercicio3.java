@@ -7,13 +7,6 @@ import com.programacao.logica.java.utilitarios.MensagemPersonalizada;
 
 public class Exercicio3 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba a base e a altura de um triângulo.\n"

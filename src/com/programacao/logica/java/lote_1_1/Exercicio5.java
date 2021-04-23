@@ -6,13 +6,6 @@ import java.util.Locale;
 
 public class Exercicio5 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba os coeficientes A, B e C de uma equação do 2º grau \n"

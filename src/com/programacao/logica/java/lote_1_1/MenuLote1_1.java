@@ -1,50 +1,10 @@
 package com.programacao.logica.java.lote_1_1;
 
-import com.programacao.logica.java.utilitarios.CaixaDeDialogoPersonalizada;
+
 import com.programacao.logica.java.utilitarios.Exercicio;
-import com.programacao.logica.java.utilitarios.MensagemPersonalizada;
 import com.programacao.logica.java.utilitarios.MenuLote;
 
 public class MenuLote1_1 implements MenuLote {
-    @Override
-    public void avaliarOpcao(int opcao, Exercicio[] lista) {
-        if (opcao > 0 && opcao <= lista.length){
-            lista[opcao - 1].executarExercicio();
-        } else if (opcao == 99) {
-            MensagemPersonalizada.mensagemInformacao(
-                    "Saindo ...",
-                    "Fim da sessão"
-            );
-        } else {
-            MensagemPersonalizada.mensagemAtencao(
-                    "Por favor, insira uma opção válida.",
-                    "Atenção"
-            );
-        }
-    }
-
-    @Override
-    public void executarMenu(){
-        int opcaoSelecionada = 0;
-        do {
-            try{
-            opcaoSelecionada = CaixaDeDialogoPersonalizada
-                    .caixaInteger(montarMenu());
-            avaliarOpcao(opcaoSelecionada, this.listaInstanciaExercicios);
-            }catch (NumberFormatException numberFormatException) {
-                MensagemPersonalizada.mensagemErro(
-                        "Por favor, insira somente números.",
-                        "Erro"
-                );
-            }catch (NullPointerException nullPointerException) {
-                MensagemPersonalizada.mensagemAtencao(
-                        "Voltando para a página anterior...",
-                        "Atenção"
-                );
-            }
-        } while (opcaoSelecionada != 99);
-    }
-
     @Override
     public String montarMenu() {
         return definirEstruturaPrincipal(
@@ -81,12 +41,17 @@ public class MenuLote1_1 implements MenuLote {
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 10, 15)
                                 ),
-                                adicionarConteudoPorQtde("td", 1,
-                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 15, 16))
+                                adicionarConteudoPorQtde("td", 2,
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 15, 17))
                         )
                     )
             )
         );
+    }
+
+    @Override
+    public Exercicio[] exerciosExecutaveis() {
+        return this.listaInstanciaExercicios;
     }
 
     private String listaEnunciadoExercicios[] = {
@@ -105,7 +70,8 @@ public class MenuLote1_1 implements MenuLote {
             "13 - Quantidade de dias, de duração de alimentos",
             "14 - Terceiro ângulo, de um triângulo",
             "15 - Hipotenusa de um triângulo retângulo",
-            "16 - Salário Bruto e Salário Líquido"
+            "16 - Salário Bruto e Salário Líquido",
+            "17 - Quantidade de litros gastos, em uma viagem"
     };
 
     private Exercicio listaInstanciaExercicios[] = {
@@ -124,6 +90,7 @@ public class MenuLote1_1 implements MenuLote {
             new Exercicio13(),
             new Exercicio14(),
             new Exercicio15(),
-            new Exercicio16()
+            new Exercicio16(),
+            new Exercicio17()
     };
 }

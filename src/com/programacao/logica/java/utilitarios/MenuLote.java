@@ -1,9 +1,43 @@
 package com.programacao.logica.java.utilitarios;
 
 public interface MenuLote {
-    void avaliarOpcao(int opcao, Exercicio[] lista);
-    void executarMenu();
     String montarMenu();
+    Exercicio[] exerciosExecutaveis();
+    default void executarMenu(){
+        int opcaoSelecionada = 0;
+        do {
+            try{
+                opcaoSelecionada = CaixaDeDialogoPersonalizada
+                        .caixaInteger(montarMenu());
+                avaliarOpcao(opcaoSelecionada, exerciosExecutaveis());
+            }catch (NumberFormatException numberFormatException) {
+                MensagemPersonalizada.mensagemErro(
+                        "Por favor, insira somente números.",
+                        "Erro"
+                );
+            }catch (NullPointerException nullPointerException) {
+                MensagemPersonalizada.mensagemAtencao(
+                        "Voltando para a página anterior...",
+                        "Atenção"
+                );
+            }
+        } while (opcaoSelecionada != 99);
+    }
+    default void avaliarOpcao(int opcao, Exercicio[] lista) {
+        if (opcao > 0 && opcao <= lista.length){
+            lista[opcao - 1].executarExercicio();
+        } else if (opcao == 99) {
+            MensagemPersonalizada.mensagemInformacao(
+                    "Saindo ...",
+                    "Fim da sessão"
+            );
+        } else {
+            MensagemPersonalizada.mensagemAtencao(
+                    "Por favor, insira uma opção válida.",
+                    "Atenção"
+            );
+        }
+    }
     default String adicionarConteudo(String tipo, String... conteudo){
         return
                 "<".concat(tipo).concat(">")

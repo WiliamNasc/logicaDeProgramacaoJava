@@ -7,13 +7,6 @@ import com.programacao.logica.java.utilitarios.MensagemPersonalizada;
 
 public class Exercicio4 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba a temperatura em graus Celsius. Calcule e mostre a sua \n"

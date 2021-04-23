@@ -9,13 +9,6 @@ import java.util.Locale;
 
 public class Exercicio6 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba os valores em x e y. Efetua a troca de seus valores e mostre seus \n"

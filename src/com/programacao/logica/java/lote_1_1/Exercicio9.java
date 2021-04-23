@@ -7,13 +7,6 @@ import com.programacao.logica.java.utilitarios.MensagemPersonalizada;
 
 public class Exercicio9 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba os 2 números inteiros.\n"

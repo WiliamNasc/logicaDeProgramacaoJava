@@ -4,13 +4,6 @@ import com.programacao.logica.java.utilitarios.*;
 
 public class Exercicio16 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba a quantidade de horas trabalhadas, o valor por hora, o percentual "
@@ -48,7 +41,7 @@ public class Exercicio16 implements Exercicio {
                                 )
                         )
                 ),
-                ""
+                "Exercício 16"
         );
     }
 

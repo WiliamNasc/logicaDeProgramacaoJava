@@ -6,13 +6,6 @@ import com.programacao.logica.java.utilitarios.MensagemPersonalizada;
 
 public class Exercicio12 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Receba o ano de nascimento e o ano atual."
@@ -25,7 +18,7 @@ public class Exercicio12 implements Exercicio {
     @Override
     public void visualizarResposta() {
         MensagemPersonalizada.mensagemInformacao(
-                "A sua idade é:" + this.idade
+                "A sua idade é: " + this.idade
                 + "\n"
                 + "Daqui à 17 anos, você terá: " + retornarIdadeDaqui17Anos(this.idade),
                 "Exercício 12"

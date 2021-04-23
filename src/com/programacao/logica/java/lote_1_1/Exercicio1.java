@@ -7,13 +7,6 @@ import com.programacao.logica.java.utilitarios.MensagemPersonalizada;
 
 public class Exercicio1 implements Exercicio {
     @Override
-    public void executarExercicio() {
-        visualizarEnunciado();
-        solicitarDadosUsuario();
-        visualizarResposta();
-    }
-
-    @Override
     public void visualizarEnunciado() {
         MensagemPersonalizada.mensagemInformacao(
                 "Coletar o valor do lado de um quadrado,\n"
