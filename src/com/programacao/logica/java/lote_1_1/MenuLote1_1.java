@@ -31,7 +31,7 @@ public class MenuLote1_1 implements MenuLote {
                         adicionarConteudoPorQtde("tr", 1,
                                 adicionarConteudoPorQtde("th", 5, "")
                         ),
-                        adicionarConteudoPorQtde("tr", 4,
+                        adicionarConteudoPorQtde("tr", 5,
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 0,5)
                                 ),
@@ -42,7 +42,11 @@ public class MenuLote1_1 implements MenuLote {
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 10, 15)
                                 ),
                                 adicionarConteudoPorQtde("td", 5,
-                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 15, 20))
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 15, 20)
+                                ),
+                                adicionarConteudoPorQtde("td", 1,
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 20, 21)
+                                )
                         )
                     )
             )
@@ -74,7 +78,8 @@ public class MenuLote1_1 implements MenuLote {
             "17 - Quantidade de litros gastos, em uma viagem",
             "18 - Diferença entre o maior e menor valor (inteiro)",
             "19 - Mostrar o maior valor (real)",
-            "20 - Equação de 2º grau (com validação)"
+            "20 - Equação de 2º grau (com validação)",
+            "21 - Média de notas de aluno"
     };
 
     private Exercicio listaInstanciaExercicios[] = {
@@ -97,6 +102,7 @@ public class MenuLote1_1 implements MenuLote {
             new Exercicio17(),
             new Exercicio18(),
             new Exercicio19(),
-            new Exercicio20()
+            new Exercicio20(),
+            new Exercicio21()
     };
 }

@@ -5,7 +5,7 @@ public interface Exercicio {
         visualizarEnunciado();
         solicitarDadosUsuario();
         visualizarResposta();
-    };
+    }
     void visualizarEnunciado();
     void visualizarResposta();
     void solicitarDadosUsuario();
