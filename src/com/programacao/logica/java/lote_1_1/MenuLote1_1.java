@@ -44,8 +44,8 @@ public class MenuLote1_1 implements MenuLote {
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 15, 20)
                                 ),
-                                adicionarConteudoPorQtde("td", 1,
-                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 20, 21)
+                                adicionarConteudoPorQtde("td", 2,
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 20, 22)
                                 )
                         )
                     )
@@ -79,7 +79,8 @@ public class MenuLote1_1 implements MenuLote {
             "18 - Diferença entre o maior e menor valor (inteiro)",
             "19 - Mostrar o maior valor (real)",
             "20 - Equação de 2º grau (com validação)",
-            "21 - Média de notas de aluno"
+            "21 - Média de notas de aluno",
+            "22 - Valores (2) em ordem crescente"
     };
 
     private Exercicio listaInstanciaExercicios[] = {
@@ -103,6 +104,7 @@ public class MenuLote1_1 implements MenuLote {
             new Exercicio18(),
             new Exercicio19(),
             new Exercicio20(),
-            new Exercicio21()
+            new Exercicio21(),
+            new Exercicio22()
     };
 }
