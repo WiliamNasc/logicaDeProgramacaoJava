@@ -46,7 +46,7 @@ public class Exercicio22 implements Exercicio {
     }
 
     private void validarValores() {
-        if (this.primeiroValor == this.segundoValor) {
+        while (this.primeiroValor == this.segundoValor) {
             this.primeiroValor = CaixaDeDialogoPersonalizada
                     .caixaInteger("Por favor, insira um valor diferentes, \n" +
                             "para o Primeiro valor");
