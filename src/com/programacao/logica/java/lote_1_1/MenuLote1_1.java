@@ -44,8 +44,8 @@ public class MenuLote1_1 implements MenuLote {
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 15, 20)
                                 ),
-                                adicionarConteudoPorQtde("td", 3,
-                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 20, 23)
+                                adicionarConteudoPorQtde("td", 4,
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 20, 24)
                                 )
                         )
                     )
@@ -81,7 +81,8 @@ public class MenuLote1_1 implements MenuLote {
             "20 - Equação de 2º grau (com validação)",
             "21 - Média de notas de aluno",
             "22 - Valores (2) em ordem crescente",
-            "23 - Valores (3) em ordem crescente"
+            "23 - Valores (3) em ordem crescente",
+            "24 - Valor (inteiro) divisível por 2 e 3"
     };
 
     private Exercicio listaInstanciaExercicios[] = {
@@ -107,6 +108,7 @@ public class MenuLote1_1 implements MenuLote {
             new Exercicio20(),
             new Exercicio21(),
             new Exercicio22(),
-            new Exercicio23()
+            new Exercicio23(),
+            new Exercicio24()
     };
 }
