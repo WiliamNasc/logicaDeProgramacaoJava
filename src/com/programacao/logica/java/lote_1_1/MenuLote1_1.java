@@ -31,7 +31,7 @@ public class MenuLote1_1 implements MenuLote {
                         adicionarConteudoPorQtde("tr", 1,
                                 adicionarConteudoPorQtde("th", 5, "")
                         ),
-                        adicionarConteudoPorQtde("tr", 5,
+                        adicionarConteudoPorQtde("tr", 6,
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 0,5)
                                 ),
@@ -46,6 +46,9 @@ public class MenuLote1_1 implements MenuLote {
                                 ),
                                 adicionarConteudoPorQtde("td", 5,
                                         retornaritensPorLimite(this.listaEnunciadoExercicios, 20, 25)
+                                ),
+                                adicionarConteudoPorQtde("td", 1,
+                                        retornaritensPorLimite(this.listaEnunciadoExercicios, 25, 26)
                                 )
                         )
                     )
@@ -83,7 +86,8 @@ public class MenuLote1_1 implements MenuLote {
             "22 - Valores (2) em ordem crescente",
             "23 - Valores (3) em ordem crescente",
             "24 - Valor (inteiro) divisível por 2 e 3",
-            "25 - Duração jogo"
+            "25 - Duração jogo",
+            "26 - Maior número múltiplo do menor"
     };
 
     private Exercicio listaInstanciaExercicios[] = {
@@ -111,6 +115,7 @@ public class MenuLote1_1 implements MenuLote {
             new Exercicio22(),
             new Exercicio23(),
             new Exercicio24(),
-            new Exercicio25()
+            new Exercicio25(),
+            new Exercicio26()
     };
 }
