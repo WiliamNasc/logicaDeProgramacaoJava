@@ -1,8 +1,13 @@
 package com.programacao.logica.java.utilitarios;
 
-import javax.swing.*;
+// Só importe o que realmente vc vai usar
+import javax.swing.JOptionPane;
 
 public class CaixaDeDialogoPersonalizada {
+
+    // Só p/ impossibitar a instanciação da classe
+    private CaixaDeDialogoPersonalizada() {}
+
     public static int caixaInteger (String mensagem){
         int caixaDialogo = 0;
         try{
